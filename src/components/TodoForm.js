@@ -12,6 +12,7 @@ class TodoForm extends React.Component {
   onSubmit = event => {
     event.preventDefault();
     this.props.addTodo(this.state.text);
+    this.setState({ text: '' });
   };
 
   onChangeHandle = event => {
